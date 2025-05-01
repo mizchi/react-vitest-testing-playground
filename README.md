@@ -1,16 +1,22 @@
 # @testing-library/react test patterns
 
-- [Component Test](app/components/Counter.test.tsx)
-- [Test hooks](app/components/useCounter.test.tsx)
-- [Test with jotai](app/components/JotaiApp.test.tsx)
-- [Routed Component Test](app/routes/home.test.tsx)
-- [Playwright Test](tests/state-counter.spec.ts)
+- [Component Tests](app/components/Counter.test.tsx)
+- [Tests hooks](app/components/useCounter.test.tsx)
+- [Tests with jotai](app/components/JotaiApp.test.tsx)
+- [Router Component Tests](app/routes/home.test.tsx)
+- [Playwright Tests](e2e/state-counter.spec.ts)
+- [Playwright Snapshot](e2e/index.spec.ts)
 
 ## Run
 
-```
+```bash
 npm install
-npm run
+# dev server
+npm run dev
+# vitest
+npm test
+# playwright
+npm run e2e
 ```
 
 ---
