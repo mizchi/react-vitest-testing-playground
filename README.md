@@ -4,6 +4,14 @@
 - [Test hooks](app/components/useCounter.test.tsx)
 - [Test with jotai](app/components/JotaiApp.test.tsx)
 - [Routed Component Test](app/routes/home.test.tsx)
+- [Playwright Test](tests/state-counter.spec.ts)
+
+## Run
+
+```
+npm install
+npm run
+```
 
 ---
 

@@ -5,6 +5,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [tailwindcss(), !process.env.VITEST && reactRouter()],
   test: {
+    include: ["**/*.test.tsx", "**/*.test.ts"],
     environment: "happy-dom",
     setupFiles: "./test/setup.ts",
   },
