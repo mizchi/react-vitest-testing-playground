@@ -1,3 +1,12 @@
+# @testing-library/react test patterns
+
+- [Component Test](app/components/Counter.test.tsx)
+- [Test hooks](app/components/useCounter.test.tsx)
+- [Test with jotai](app/components/JotaiApp.test.tsx)
+- [Routed Component Test](app/routes/home.test.tsx)
+
+---
+
 # Welcome to React Router!
 
 A modern, production-ready template for building full-stack React applications using React Router.
