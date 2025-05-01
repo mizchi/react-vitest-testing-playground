@@ -5,6 +5,12 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [tailwindcss(), !process.env.VITEST && reactRouter()],
   test: {
+    coverage: {
+      reporter: ["text", "json", "html"],
+      reportsDirectory: "./coverage",
+      all: true,
+      include: ["app/**/*.{ts,tsx}"],
+    },
     include: ["**/*.test.tsx", "**/*.test.ts"],
     environment: "happy-dom",
     setupFiles: "./test/setup.ts",
