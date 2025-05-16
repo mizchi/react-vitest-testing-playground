@@ -1,4 +1,4 @@
-name: Playwright Tests Sharded
+name: Playwright Sharded Tests
 on:
   push:
     branches: [ main ]
@@ -21,8 +21,7 @@ jobs:
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright browsers
-      run: npx playwright install --with-deps
-
+      run: npx playwright install --with-deps chromium
     - name: Run Playwright tests
       run: npx playwright test --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}
 
