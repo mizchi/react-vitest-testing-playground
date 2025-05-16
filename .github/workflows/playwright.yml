@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Playwright Tests Sharded
 on:
   push:
     branches: [ main ]
